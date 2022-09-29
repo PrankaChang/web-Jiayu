@@ -1,0 +1,47 @@
+@import 'base';
+
+
+.mt-8{
+    margin-top: 8rem;
+}
+
+.t-f-2{
+    font-family: "Lobster", cursive;
+}
+
+/* Animations */
+
+
+
+  [data-aos="example-anim2"] {
+    transform: scale(3.2);
+    opacity: 1;
+    transition-property: transform, opacity;
+    &.aos-animate {
+        transform: scale(1);
+      opacity:1 ;
+    }
+  }
+
+  [data-aos="example-right"] {
+    transform:  translate(0px 0px);
+   
+    transition-property: transform;
+    &.aos-animate {
+      transform:  translate(100px,0px);
+   
+    }
+   
+  }
+
+  [data-aos="example-left"] {
+    transform:  translate(0px 0px);
+   
+    transition-property: transform;
+    &.aos-animate {
+      transform:  translate(-100px,0px);
+     
+     
+    }
+   
+  }
