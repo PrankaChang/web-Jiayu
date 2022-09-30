@@ -516,16 +516,16 @@
 
           if (count == 10) {
             //console.log("nextpage");
-            window.location.href("./index.html");
+
+            window.location = "./index.html";
           }
         } else {
           count = 0;
-          refreshBar();
         }
       }
 
       function refreshBar() {
-        bar.style.width = (count - 1) * 10 + "%";
+        bar.style.width = (count + 1) * 10 + "%";
       }
 
       function debounce(func, delay = 250) {
