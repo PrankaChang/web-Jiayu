@@ -20,13 +20,15 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/works.css" />
+    <link href="img/favicon.ico" rel="shortcut icon" />
   </head>
   <body>
-    <header class="mb-5">
+    <header class="container-fluid mb-5 pt-3">
       <button
         type="button"
-        class="btn btn-outline-light rounded-pill m-3 t-f-2 d-flex align-items-center"
+        class="btn btn-outline-light rounded-pill t-f-2 d-flex align-items-center"
         onclick="javascript:location.href='./index.html'"
+        data-aos="anim-backBtn"
       >
         <span class="material-icons">reply_all </span>
         <span class="mx-2"> JIAYU CHANG ☺</span>
@@ -34,19 +36,21 @@
       <!----------------banner----------------------------->
       <!--------------------------------------------------->
       <!---------------------------------------------------->
-      <img
-        src="./img/works1/header.gif"
-        class="img-fluid"
-        alt="作品畫面gif檔"
-      />
+      <div class="container">
+        <img
+          src="./img/works1/header.gif"
+          class="img-fluid"
+          alt="作品畫面gif檔"
+        />
+      </div>
     </header>
     <!---------------intro----------------------------->
     <!------------------------------------------------->
     <!------------------------------------------------->
-    <section class="container">
+    <section class="container overflow-hidden">
       <div class="row mb-5 py-5" data-aos="fade-up">
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <div>
+        <div class="col-md-5 d-flex justify-content-center align-items-center">
+          <div class="text-md-start text-center">
             <!----------------intro title----------------------------->
             <h4 class="fw-bold">Project Brief</h4>
             <p class="small">
@@ -55,7 +59,7 @@
               2017-2018
             </p>
             <!----------------download----------------------------->
-            <div>
+            <div class="text-center text-md-start mb-3">
               <a
                 href="./download/text.png"
                 download="pic.png"
@@ -69,7 +73,7 @@
         <!----------------intro contant----------------------------->
         <!---------------------------------------------------------->
         <!---------------------------------------------------------->
-        <div class="col">
+        <div class="col-md-6">
           <p class="lh-lg">
             終焉誓約是一款面向二次元玩家的移動端遊戲，於2021正式在中國發行。
             於網龍天晴公司任職期間參與此專案，曾為此遊戲主UX設計師，負責將遊戲系統功能轉化成一步步的操作介面，並結合遊戲背景包裝，以確保產品調性一致與操作流程的易用性。
@@ -101,11 +105,11 @@
       <!----------------流程---------------------------->
       <!------------------------------------------------->
       <!------------------------------------------------->
-      <div class="row mt-8 mb-5 py-5" data-aos="fade-left" data-aos-delay="300">
-        <div class="col-5 d-flex justify-content-center align-items-center">
+      <div class="row mt-8 mb-5 py-5" data-aos="fade-left">
+        <div class="col-md-5 d-flex justify-content-center align-items-center">
           <h4 class="text-orange">抽卡/轉蛋功能流程</h4>
         </div>
-        <div class="col">
+        <div class="col-md">
           <p>
             作為一款多英雄卡牌的遊戲，其中一個主要付費點為英雄主角的抽卡，抽卡表現形式千百種，如何能代入遊戲的世界觀，滿足王道二次元玩家的想像，又不失體驗上的期待與驚喜感？
             <br />
@@ -145,13 +149,13 @@
       <!------------------------------------------------->
       <!------------------------------------------------->
       <div class="row my-5 pb-5" data-aos="fade-up">
-        <div class="col-5 d-flex justify-content-center align-items-center">
-          <div>
+        <div class="col-md-5 d-flex justify-content-center align-items-center">
+          <div class="text-md-start text-center">
             <h4>挑戰</h4>
             <p class="small">通用與特殊包裝之間的權衡</p>
           </div>
         </div>
-        <div class="col">
+        <div class="col-md">
           <p>
             隨著功能與活動的增加，遊戲包體來到近8Ｇ，普遍而言包體過大會直接影響玩家的下載率，因而龐大的包體面臨縮減的挑戰。
             <br />
@@ -228,10 +232,12 @@
           </p>
         </div>
       </div>
-      <!----------------next-------------------------->
-      <!---------------------------------------------->
-      <!---------------------------------------------->
-      <div class="container position-relative">
+    </section>
+    <!----------------next-------------------------->
+    <!---------------------------------------------->
+    <!---------------------------------------------->
+    <footer>
+      <div class="container-fluid position-relative px-0">
         <img src="./img/works1/next.png" alt="next" class="img-fluid" />
 
         <div class="w-75 position-absolute top-50 start-50 translate-middle">
@@ -247,7 +253,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
@@ -295,6 +301,7 @@
           }
         } else {
           count = 0;
+          refreshBar();
         }
       }
 

@@ -30,6 +30,32 @@ body {
   font-family: "Lobster", cursive;
 }
 
+.text-gold {
+  color: #CD9B4A;
+}
+
+/*background*/
+.bg-coffee {
+  background-color: #985D4A;
+}
+
+.bg-darkCoffee {
+  background-color: #453526;
+}
+
+.bg-lightGray {
+  background-color: #adb5bd;
+}
+
+.bg-img-w3 {
+  background: url(.././img/works3/bg.png) no-repeat center/auto 100%;
+}
+
+.bg-linear-gray {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#000), color-stop(#343a40), to(#000));
+  background-image: linear-gradient(to bottom right, #000, #343a40, #000);
+}
+
 /* Animations */
 [data-aos="example-anim2"] {
   -webkit-transform: scale(3.2);
@@ -73,5 +99,73 @@ body {
 [data-aos="example-left"].aos-animate {
   -webkit-transform: translate(-100px, 0px);
           transform: translate(-100px, 0px);
+}
+
+[data-aos="anim-backBtn"] {
+  -webkit-transform: scale(0.3, 1);
+          transform: scale(0.3, 1);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+[data-aos="anim-backBtn"].aos-animate {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+/* phone */
+.phone {
+  position: relative;
+  display: block;
+  width: 25vw;
+  height: 45.25vw;
+  background-color: #454441;
+  border-radius: 4.26621vw;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 0.28441vw;
+}
+
+.phone .phoneCase {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #3a3a3a;
+  border-radius: 4.26621vw;
+  padding: 4.26621vw 2.13311vw;
+}
+
+.phone .phoneCase .phoneContent {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+#iphone {
+  height: 53.5vw;
+  border-radius: 2.38095vw;
+}
+
+#iphone .phoneCase {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 2.38095vw;
+}
+
+.bigOnePhone {
+  height: 49.25vw;
+}
+
+.scaleSmall {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
 }
 /*# sourceMappingURL=works.css.map */
