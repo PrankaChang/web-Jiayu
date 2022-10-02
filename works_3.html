@@ -73,11 +73,13 @@
             <div class="phoneCase">
               <div class="phoneContent">
                 <video
+                  id="video1"
                   controls="controls"
                   width="100%"
                   height="auto"
-                  autoplay="true"
+                  autoplay="false"
                   src="./img/works3/w-3-video-center.mp4"
+                  muted
                 ></video>
               </div>
             </div>
@@ -102,7 +104,6 @@
               <div class="text-center text-md-start mb-3">
                 <a
                   href="https://play.google.com/store/apps/details?id=com.igg.android.dressuptimeprincess&hl=en&gl=US"
-                  download="pic.png"
                   class="btn btn-orange rounded-pill"
                 >
                   <span class="material-icons"> cloud_download </span>
@@ -331,102 +332,108 @@
       <!-----------------------玩法 ------------------>
       <!------------------------------------------------->
       <!------------------------------------------------->
-      <div class="bg-darkCoffee py-3 mb-md-5">
-        <div class="container">
-          <!--星空塔羅玩法-->
-          <div class="row mb-3 justify-content-center">
-            <div class="col-md-5 d-flex justify-content-center">
-              <figure class="phone scaleSmall">
-                <div class="phoneCase">
-                  <div class="phoneContent">
-                    <img
-                      src="./img/works3/w-3-gif-3.gif"
-                      alt=""
-                      class="img-fluid"
-                    />
+      <div class="bg-img-w3-2 mb-md-5">
+        <div class="bg-darkCoffee py-5">
+          <div class="container">
+            <!--星空塔羅玩法-->
+            <div class="row mb-3 justify-content-center">
+              <div class="col-md-5 d-flex justify-content-center">
+                <figure class="phone scaleSmall">
+                  <div class="phoneCase">
+                    <div class="phoneContent">
+                      <img
+                        src="./img/works3/w-3-gif-3.gif"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
                   </div>
+                </figure>
+              </div>
+              <div
+                class="col-md-4 d-flex justify-content-center align-self-center"
+              >
+                <div class="text-center px-md-4">
+                  <h4 class="text-gold">星空塔羅玩法</h4>
+                  <p class="fs-5">
+                    每張卡牌代表玩家所遇關卡，隨左右滑動來進行選擇
+                  </p>
+                  <small class="fs-6"
+                    >為節省玩法美術開發成本，利用一付卡牌做為此玩法系統包裝，每張卡牌代表玩家所經歷的際遇，部分卡牌需要玩家進行選擇，以利後續進入戰鬥</small
+                  >
                 </div>
-              </figure>
-            </div>
-            <div
-              class="col-md-4 d-flex justify-content-center align-self-center"
-            >
-              <div class="text-center px-md-4">
-                <h4 class="text-gold">星空塔羅玩法</h4>
-                <p class="fs-5">
-                  每張卡牌代表玩家所遇關卡，隨左右滑動來進行選擇
-                </p>
-                <small class="fs-6"
-                  >為節省玩法美術開發成本，利用一付卡牌做為此玩法系統包裝，每張卡牌代表玩家所經歷的際遇，部分卡牌需要玩家進行選擇，以利後續進入戰鬥</small
-                >
               </div>
             </div>
-          </div>
-          <!--研習系統-小遊戲1-->
-          <div class="row mb-3 justify-content-center">
-            <div class="col-md-5 d-flex justify-content-center">
-              <figure class="phone scaleSmall">
-                <div class="phoneCase">
-                  <div class="phoneContent">
-                    <video
-                      controls="controls"
-                      width="100%"
-                      height="auto"
-                      autoplay="true"
-                      src="./img/works3/w-3-video-4.mp4"
-                    ></video>
+            <!--研習系統-小遊戲1-->
+            <div class="row mb-3 justify-content-center">
+              <div class="col-md-5 d-flex justify-content-center">
+                <figure class="phone scaleSmall">
+                  <div class="phoneCase">
+                    <div class="phoneContent">
+                      <video
+                        id="video2"
+                        controls="controls"
+                        width="100%"
+                        height="auto"
+                        autoplay="false"
+                        src="./img/works3/w-3-video-4.mp4"
+                        muted
+                      ></video>
+                    </div>
                   </div>
+                </figure>
+              </div>
+              <div
+                class="col-md-4 d-flex justify-content-center align-self-center"
+              >
+                <div class="text-center px-md-4">
+                  <h4 class="text-gold">研習系統-小遊戲1</h4>
+                  <p class="fs-5">類打地鼠的遊戲</p>
+                  <small class="fs-6">
+                    原需求為類似打地鼠的遊戲，但綜合現有資源與操作反饋考量，包裝為被氣球帶走，救出傑瑞鼠的玩法
+                  </small>
                 </div>
-              </figure>
-            </div>
-            <div
-              class="col-md-4 d-flex justify-content-center align-self-center"
-            >
-              <div class="text-center px-md-4">
-                <h4 class="text-gold">研習系統-小遊戲1</h4>
-                <p class="fs-5">類打地鼠的遊戲</p>
-                <small class="fs-6">
-                  原需求為類似打地鼠的遊戲，但綜合現有資源與操作反饋考量，包裝為被氣球帶走，救出傑瑞鼠的玩法
-                </small>
               </div>
             </div>
-          </div>
-          <!--研習系統-小遊戲2-->
-          <div class="row mb-3 justify-content-center">
-            <div class="col-md-5 d-flex justify-content-center">
-              <figure class="phone scaleSmall" id="iphone">
-                <div class="phoneCase">
-                  <div class="phoneContent">
-                    <video
-                      controls="controls"
-                      width="100%"
-                      height="auto"
-                      autoplay="true"
-                      src="./img/works3/w-3-video-5.mp4"
-                    ></video>
+            <!--研習系統-小遊戲2-->
+            <div class="row mb-3 justify-content-center">
+              <div class="col-md-5 d-flex justify-content-center">
+                <figure class="phone scaleSmall" id="iphone">
+                  <div class="phoneCase">
+                    <div class="phoneContent">
+                      <video
+                        id="video3"
+                        controls="controls"
+                        width="100%"
+                        height="auto"
+                        autoplay="false"
+                        src="./img/works3/w-3-video-5.mp4"
+                        muted
+                      ></video>
+                    </div>
                   </div>
+                </figure>
+              </div>
+              <div
+                class="col-md-4 d-flex justify-content-center align-self-center"
+              >
+                <div class="text-center px-md-4">
+                  <h4 class="text-gold">研習系統-小遊戲2</h4>
+                  <p class="fs-5">類找不同處的遊戲</p>
+                  <small class="fs-6">
+                    為常見小遊戲玩法，主要為連貫界面的流程設計
+                  </small>
                 </div>
-              </figure>
-            </div>
-            <div
-              class="col-md-4 d-flex justify-content-center align-self-center"
-            >
-              <div class="text-center px-md-4">
-                <h4 class="text-gold">研習系統-小遊戲2</h4>
-                <p class="fs-5">類找不同處的遊戲</p>
-                <small class="fs-6">
-                  為常見小遊戲玩法，主要為連貫界面的流程設計
-                </small>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!----------------結果 need add id="targetNextPage" & id="triggrtAnchor"--------------------------->
+      <!----------------結果  --------------------------->
       <!------------------------------------------------->
       <!------------------------------------------------->
       <div class="container">
-        <div class="row my-5 py-5" id="targetNextPage">
+        <div class="row my-5 py-5">
           <div class="col-md-5 mt-5" data-aos="fade-in">
             <div class="p-3">
               <img src="./img/works3/w3-4.png" alt="圖示" class="img-fluid" />
@@ -452,12 +459,11 @@
           </div>
         </div>
       </div>
-      <div id="triggrtAnchor"></div>
     </section>
     <!----------------next-------------------------->
     <!---------------------------------------------->
     <!---------------------------------------------->
-    <footer class="bg-secondary py-5">
+    <footer class="bg-secondary py-5" id="goNext">
       <div class="container-fluid position-relative px-0 py-5 my-5">
         <div class="w-75 position-absolute top-50 start-50 translate-middle">
           <h2 class="text-center fs-1 fw-bold text-dark">NEXT</h2>
@@ -468,6 +474,7 @@
               aria-valuenow="0"
               aria-valuemin="0"
               aria-valuemax="100"
+              id="bar"
             ></div>
           </div>
         </div>
@@ -479,70 +486,105 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <script>
       AOS.init({
         duration: 1200,
       });
 
-      //跳轉頁面
+      $(document).ready(function () {
+        //video1
+        var video1 = $("#video1");
+        var pointVideo1Start = video1.offset().top;
+        var pointVideo1End = pointVideo1Start + video1.height();
+        //video2
+        var video2 = $("#video2");
+        var pointVideo2Start = video2.offset().top;
+        var pointVideo2End = pointVideo2Start + video2.height();
 
-      const divNextPage = document.getElementById("targetNextPage");
-      var timerId = setInterval(timer, 1000);
-      var count = 0;
-      var boolTimebtn = false;
-      const bar = document.querySelector(".progress-bar");
-      //console.log(document.body.scrollHeight);
+        //video3
+        var video3 = $("#video3");
+        var pointVideo3Start = video3.offset().top;
+        var pointVideo3End = pointVideo3Start + video3.height();
+        //mouse
+        var point = 0;
 
-      window.addEventListener("scroll", debounce(nextPage, 5));
+        //next page
+        var boxPgNext = $("#goNext");
+        var pointBPN = boxPgNext.offset().top + boxPgNext.height();
+        var boolTime = false;
+        //time
+        setInterval(timer, 1000);
+        var count = 0;
 
-      function nextPage() {
-        const moveToNext = divNextPage.offsetTop + divNextPage.clientHeight;
+        //add scroll function
+        $(document).scroll(function () {
+          point = $(document).scrollTop();
 
-        if (window.scrollY + window.innerHeight > moveToNext) {
-          // console.log("touch");
-          boolTimebtn = true;
-        } else {
-          // console.log("no touch");
-          boolTimebtn = false;
-        }
-      }
-
-      function timer() {
-        // console.log(count);
-
-        if (boolTimebtn) {
-          count++;
-          refreshBar();
-
-          if (count == 10) {
-            //console.log("nextpage");
-
-            window.location = "./index.html";
+          //if enter video1 box
+          if (point > pointVideo1Start && point < pointVideo1End) {
+            video1.trigger("play");
+            //console.log("play");
+          } else {
+            video1.trigger("pause");
+            //console.log("pause");
           }
-        } else {
-          count = 0;
+
+          //if enter video2 box
+          if (point > pointVideo2Start && point < pointVideo2End) {
+            video2.trigger("play");
+            //console.log("play");
+          } else {
+            video2.trigger("pause");
+            //console.log("pause");
+          }
+
+          //if enter video3 box
+          if (point > pointVideo3Start && point < pointVideo3End) {
+            video3.trigger("play");
+            //console.log("play");
+          } else {
+            video3.trigger("pause");
+            //console.log("pause");
+          }
+
+          //if see footer
+          if (point + window.innerHeight >= pointBPN) {
+            //console.log("go");
+            boolTime = true;
+          } else {
+            boolTime = false;
+            //console.log("exit");
+          }
+        });
+
+        //跳轉頁面
+        function timer() {
+          // console.log(count);
+
+          if (boolTime) {
+            count++;
+            refreshBar();
+            if (count == 10) {
+              window.location = "./index.html";
+            }
+          } else {
+            count = 0;
+          }
         }
-      }
 
-      function refreshBar() {
-        bar.style.width = (count + 1) * 10 + "%";
-      }
+        function refreshBar() {
+          $("#bar")
+            .attr("aria-valuenow", count * 10)
+            .css("width", count * 10 + "%");
 
-      function debounce(func, delay = 250) {
-        let timer = null;
-
-        return () => {
-          let context = this;
-          let args = arguments;
-
-          clearTimeout(timer);
-          timer = setTimeout(() => {
-            func.apply(context, args);
-          }, delay);
-        };
-      }
-
-      //phone
+          //console.log(bar.width());
+        }
+      });
     </script>
   </body>
 </html>

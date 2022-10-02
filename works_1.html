@@ -61,8 +61,7 @@
             <!----------------download----------------------------->
             <div class="text-center text-md-start mb-3">
               <a
-                href="./download/text.png"
-                download="pic.png"
+                href="https://www.taptap.com/app/138371"
                 class="btn btn-orange rounded-pill"
               >
                 <span class="material-icons"> cloud_download </span>
@@ -124,7 +123,7 @@
         <!------------------------------------------------->
         <div data-aos="fade-right" data-aos-delay="300" class="my-3">
           <img
-            src="./img/works1/woks1-1.jpg"
+            src="./img/works1/works1-1.jpg"
             alt="抽卡/轉蛋功能流程示意圖"
             class="my-5 img-fluid"
           />
@@ -136,11 +135,13 @@
           <h4 class="text-center h4 mb-5">當時版本demo展示</h4>
           <div>
             <video
+              id="video1"
               controls="controls"
               width="100%"
               height="auto"
-              autoplay="true"
+              autoplay="false"
               src="./img/works1/video.MP4"
+              muted
             ></video>
           </div>
         </div>
@@ -148,14 +149,14 @@
       <!----------------挑戰---------------------------->
       <!------------------------------------------------->
       <!------------------------------------------------->
-      <div class="row my-5 pb-5" data-aos="fade-up">
+      <div class="row my-5 pb-5 justify-content-around" data-aos="fade-up">
         <div class="col-md-5 d-flex justify-content-center align-items-center">
           <div class="text-md-start text-center">
             <h4>挑戰</h4>
             <p class="small">通用與特殊包裝之間的權衡</p>
           </div>
         </div>
-        <div class="col-md">
+        <div class="col-md-6">
           <p>
             隨著功能與活動的增加，遊戲包體來到近8Ｇ，普遍而言包體過大會直接影響玩家的下載率，因而龐大的包體面臨縮減的挑戰。
             <br />
@@ -222,7 +223,6 @@
       <div
         class="row d-flex justify-content-center my-5 py-5"
         data-aos="fade-up"
-        id="targetNextPage"
       >
         <div class="col-md-6 text-center">
           <h4 class="text-orange">結果與檢討</h4>
@@ -236,7 +236,7 @@
     <!----------------next-------------------------->
     <!---------------------------------------------->
     <!---------------------------------------------->
-    <footer>
+    <footer id="goNext">
       <div class="container-fluid position-relative px-0">
         <img src="./img/works1/next.png" alt="next" class="img-fluid" />
 
@@ -249,6 +249,7 @@
               aria-valuenow="0"
               aria-valuemin="0"
               aria-valuemax="100"
+              id="bar"
             ></div>
           </div>
         </div>
@@ -260,67 +261,79 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <script>
       AOS.init({
         duration: 1200,
       });
 
-      //跳轉頁面
+      $(document).ready(function () {
+        //video1
+        var video1 = $("#video1");
+        var pointVideo1Start = video1.offset().top;
+        var pointVideo1End = pointVideo1Start + video1.height();
 
-      const divNextPage = document.getElementById("targetNextPage");
-      var timerId = setInterval(timer, 1000);
-      var count = 0;
-      var boolTimebtn = false;
-      const bar = document.querySelector(".progress-bar");
-      //console.log(document.body.scrollHeight);
+        //mouse
+        var point = 0;
 
-      window.addEventListener("scroll", debounce(nextPage, 5));
+        //next page
+        var boxPgNext = $("#goNext");
+        var pointBPN = boxPgNext.offset().top + boxPgNext.height();
+        var boolTime = false;
+        //time
+        setInterval(timer, 1000);
+        var count = 0;
 
-      function nextPage() {
-        const moveToNext = divNextPage.offsetTop + divNextPage.clientHeight;
+        //add scroll function
+        $(document).scroll(function () {
+          point = $(document).scrollTop();
 
-        if (window.scrollY + window.innerHeight > moveToNext) {
-          // console.log("touch");
-          boolTimebtn = true;
-        } else {
-          // console.log("no touch");
-          boolTimebtn = false;
-        }
-      }
-
-      function timer() {
-        // console.log(count);
-
-        if (boolTimebtn) {
-          count++;
-          refreshBar();
-
-          if (count == 10) {
-            window.location = "./index.html";
+          //if enter video1 box
+          if (point > pointVideo1Start && point < pointVideo1End) {
+            video1.trigger("play");
+            //console.log("play");
+          } else {
+            video1.trigger("pause");
+            //console.log("pause");
           }
-        } else {
-          count = 0;
-          refreshBar();
+
+          //if see footer
+          if (point + window.innerHeight >= pointBPN) {
+            //console.log("go");
+            boolTime = true;
+          } else {
+            boolTime = false;
+            //console.log("exit");
+          }
+        });
+
+        //跳轉頁面
+        function timer() {
+          //console.log(count);
+
+          if (boolTime) {
+            count++;
+            refreshBar();
+            if (count == 10) {
+              window.location = "./works_2.html";
+            }
+          } else {
+            count = 0;
+          }
         }
-      }
 
-      function refreshBar() {
-        bar.style.width = (count + 1) * 10 + "%";
-      }
+        function refreshBar() {
+          $("#bar")
+            .attr("aria-valuenow", count * 10)
+            .css("width", count * 10 + "%");
 
-      function debounce(func, delay = 250) {
-        let timer = null;
-
-        return () => {
-          let context = this;
-          let args = arguments;
-
-          clearTimeout(timer);
-          timer = setTimeout(() => {
-            func.apply(context, args);
-          }, delay);
-        };
-      }
+          //console.log(bar.width());
+        }
+      });
     </script>
   </body>
 </html>
