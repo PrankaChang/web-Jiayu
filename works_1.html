@@ -26,12 +26,13 @@
     <header class="container-fluid mb-5 pt-3">
       <button
         type="button"
-        class="btn btn-outline-light rounded-pill t-f-2 d-flex align-items-center"
+        class="btn btn-outline-light rounded-pill t-f-2 d-flex align-items-center position-fixed top-0 start-0 m-3"
         onclick="javascript:location.href='./index.html'"
-        data-aos="anim-backBtn"
+        style="z-index: 1"
+        id="goIndex"
       >
         <span class="material-icons">reply_all </span>
-        <span class="mx-2"> JIAYU CHANG ☺</span>
+        <span class="mx-2" id="btn-txt"> JIAYU CHANG ☺</span>
       </button>
       <!----------------banner----------------------------->
       <!--------------------------------------------------->
@@ -292,6 +293,11 @@
         $(document).scroll(function () {
           point = $(document).scrollTop();
 
+          //
+          $("#btn-txt").css("display", "none");
+          if (point == 0) {
+            $("#btn-txt").css("display", "block");
+          }
           //if enter video1 box
           if (point > pointVideo1Start && point < pointVideo1End) {
             video1.trigger("play");
