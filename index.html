@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>JIAYU</title>
+    <script
+      src="https://kit.fontawesome.com/fe6e8fa843.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -20,43 +24,70 @@
     <link href="img/favicon.ico" rel="shortcut icon" />
   </head>
   <body>
+    <header class="container-fluid">
+      <div class="p-3 text-end">
+        <button
+          type="button"
+          class="btn btn-outline-light rounded-pill write px-4"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          ABOUT
+        </button>
+      </div>
+    </header>
     <section>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row flex-md-row-reverse">
-          <div class="col-md d-flex align-items-center">
-            <!---------------------about btn-->
-            <div class="p-3 position-absolute top-0 end-0">
-              <button
-                type="button"
-                class="btn btn-outline-light rounded-pill write"
-                data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop"
-              >
-                ABOUT
-              </button>
-            </div>
+          <div class="col-md mt-md-5 pt-md-5">
             <!--txt-->
-            <div class="pt-5 p-md-2">
-              <h1 class="text-center">JIAYU CHANG ☺</h1>
+            <div class="pt-5 text-white">
+              <h1 class="text-center mt-md-5 pt-md-5">
+                JIAYU CHANG <i class="fa-solid fa-fish"></i>
+              </h1>
               <p class="fs-5 text-center">
-                Tresors du Bacchus is a small family run wine shop, based right
-                in the heart of the Sancerre.
+                “Bridging the gap between user and business Needs”
               </p>
             </div>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-7 py-2">
+            <!---picture-->
+            <div class="row imgs">
+              <!--124-->
+              <div class="col">
+                <a href="./works_1.html" class="btn mb-5">
+                  <img src="./img/index/work1.png" alt="1" class="img-fluid"
+                /></a>
+                <a href="./works_2.html" class="btn mb-5">
+                  <img src="./img/index/work2.jpeg" alt="2" class="img-fluid"
+                /></a>
+                <a href="#" class="btn mb-5">
+                  <img src="./img/index/work4.png" alt="4" class="img-fluid"
+                /></a>
+              </div>
+              <!--35-->
+              <div class="col align-self-center">
+                <a href="./works_3.html" class="btn mb-5">
+                  <img src="./img/index/work3.png" alt="3" class="img-fluid"
+                /></a>
+                <a href="#" class="btn mb-5">
+                  <img src="./img/index/work4.png" alt="5" class="img-fluid"
+                /></a>
+              </div>
+            </div>
             <!------------------------picture-->
+            <!--
             <div class="picBox d-flex">
               <div class="img">
                 <h4>多種類型移動端遊戲</h4>
                 <a href="./works_1.html" class="btn">
-                  <img src="./img/index/test.png" alt="" class="img-fluid"
+                  <img src="./img/index/work1.png" alt="" class="img-fluid"
                 /></a>
               </div>
               <div class="img">
                 <h4>作品二</h4>
                 <a href="./works_2.html" class="btn">
-                  <img src="./img/index/test2.png" alt="" class="img-fluid"
+                  <img src="./img/index/work2.png" alt="" class="img-fluid"
                 /></a>
               </div>
               <div class="img">
@@ -66,6 +97,7 @@
                 /></a>
               </div>
             </div>
+            -->
           </div>
         </div>
       </div>
@@ -81,19 +113,23 @@
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-fullscreen">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content p-3 bg-a">
           <!--close btn-->
           <div class="text-end">
             <button
               type="button"
-              class="btn-close bg-light rounded-pill p-3 border border-3"
+              class="btn text-white"
               data-bs-dismiss="modal"
               aria-label="Close"
-            ></button>
+            >
+              <span class="material-icons" style="font-size: 48px">
+                highlight_off
+              </span>
+            </button>
           </div>
 
-          <div class="px-5 bg-gradient position-relative">
+          <div class="px-5 position-relative">
             <!---book-->
             <div class="modal-body bg-white py-0">
               <!---contente -->

@@ -309,11 +309,9 @@
 
           //if see footer
           if (point + window.innerHeight >= pointBPN) {
-            //console.log("go");
             boolTime = true;
           } else {
             boolTime = false;
-            //console.log("exit");
           }
         });
 
@@ -323,19 +321,21 @@
 
           if (boolTime) {
             count++;
-            refreshBar();
             if (count == 10) {
               window.location = "./works_2.html";
             }
           } else {
             count = 0;
           }
+          refreshBar();
         }
 
         function refreshBar() {
           $("#bar")
             .attr("aria-valuenow", count * 10)
             .css("width", count * 10 + "%");
+          //.animate({ width: count * 10 + "%" }, 1000);
+          // .css("width", count * 10 + "%");
 
           //console.log(bar.width());
         }

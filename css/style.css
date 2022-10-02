@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;700&display=swap");
 body {
   font-family: "Roboto", sans-serif;
@@ -31,75 +32,67 @@ h1, .write {
   font-family: "Lobster", cursive;
 }
 
+.imgs a img {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.imgs a img:hover {
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
+}
+
 /*---pic drop---*/
-.picBox {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+/*
+  $img_w: 40%; // 圖片寬 用來計算平均排序用
+  $img_c: 3; // 圖片元件數量，下面有 for 迴圈
+
+.picBox{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .img{
+        position: absolute;
+       
+        border-radius: 5em;
+        animation: mbt 5s 0s linear infinite both;
+        width: $img_w;
+        &:nth-child(1){
+          right: 0px;
+            animation-delay:-2s;
+        }
+        &:nth-child(2){
+            left:100px;
+           
+        }
+        &:nth-child(3){
+            top:0;
+            animation-delay:2s;
+        }
+        
+        h4{
+          text-align: center;
+        }
+        &:hover{
+            animation-play-state: paused; // 讓動畫暫停的關鍵
+            z-index: 1; // 讓他跳第一個
+            img {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .25);
+            }
+        }
+       
+    }
+
+    @keyframes mbt {
+        0%  { transform: translateY(-600px); }
+        100%{ transform: translateY(100vh);  }
+    }
+
+
 }
 
-.picBox .img {
-  position: absolute;
-  border-radius: 5em;
-  -webkit-animation: mbt 5s 0s linear infinite both;
-          animation: mbt 5s 0s linear infinite both;
-  width: 40%;
-}
-
-.picBox .img:nth-child(1) {
-  right: 0px;
-  -webkit-animation-delay: -2s;
-          animation-delay: -2s;
-}
-
-.picBox .img:nth-child(2) {
-  left: 100px;
-}
-
-.picBox .img:nth-child(3) {
-  top: 0;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.picBox .img h4 {
-  text-align: center;
-}
-
-.picBox .img:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-  z-index: 1;
-}
-
-.picBox .img:hover img {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-}
-
-@-webkit-keyframes mbt {
-  0% {
-    -webkit-transform: translateY(-600px);
-            transform: translateY(-600px);
-  }
-  100% {
-    -webkit-transform: translateY(100vh);
-            transform: translateY(100vh);
-  }
-}
-
-@keyframes mbt {
-  0% {
-    -webkit-transform: translateY(-600px);
-            transform: translateY(-600px);
-  }
-  100% {
-    -webkit-transform: translateY(100vh);
-            transform: translateY(100vh);
-  }
-}
-
+*/
 /*modal*/
 .bg2 {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%, transparent), color-stop(5%, rgba(0, 0, 0, 0.2)));
@@ -110,6 +103,7 @@ h1, .write {
 
 .bg-a {
   background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
 
 .photo {
