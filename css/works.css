@@ -34,13 +34,29 @@ body {
   color: #CD9B4A;
 }
 
+.box-hight {
+  height: 100vh;
+}
+
+.opaBg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lineStyle {
+  width: 1px;
+  height: 100%;
+  background-color: #333;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(#ccc), to(#000));
+  background-image: linear-gradient(to bottom, #000, #ccc, #000);
+}
+
 /*background*/
 .bg-coffee {
   background-color: #985D4A;
 }
 
 .bg-darkCoffee {
-  background-color: #453526;
+  background-color: rgba(69, 53, 38, 0.8);
 }
 
 .bg-lightGray {
@@ -49,6 +65,10 @@ body {
 
 .bg-img-w3 {
   background: url(.././img/works3/bg.png) no-repeat center/auto 100%;
+}
+
+.bg-img-w3-2 {
+  background: url(.././img/works3/bg2.png) repeat;
 }
 
 .bg-linear-gray {
@@ -124,9 +144,9 @@ body {
   position: relative;
   display: block;
   width: 25vw;
-  height: 45.25vw;
+  height: 44vw;
   background-color: #454441;
-  border-radius: 4.26621vw;
+  border-radius: 2.82167vw;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   padding: 0.28441vw;
@@ -137,12 +157,12 @@ body {
   width: 100%;
   height: 100%;
   background-color: #3a3a3a;
-  border-radius: 4.26621vw;
-  padding: 4.26621vw 2.13311vw;
+  border-radius: 2.82167vw;
+  padding: 2.5vw 1.41084vw;
 }
 
 .phone .phoneCase .phoneContent {
-  background-color: black;
+  background-color: white;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -160,8 +180,35 @@ body {
   border-radius: 2.38095vw;
 }
 
+/*pad*/
+.pad {
+  position: relative;
+  display: block;
+  background-color: #985D4A;
+  background: url(.././img/works2/pad.png) no-repeat center/100%;
+  width: 45vw;
+  height: 30.375vw;
+  padding: 1.8vw 1.935vw 2.655vw 0;
+}
+
+@media (max-width: 768px) {
+  .pad {
+    width: 80vw;
+    height: 54vw;
+    padding: 3.2vw 3.44vw 4.72vw 0;
+  }
+}
+
+.pad .content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
 .bigOnePhone {
-  height: 49.25vw;
+  height: 48.5vw;
 }
 
 .scaleSmall {

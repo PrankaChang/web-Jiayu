@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background-color: #000000;
+  color: #F7E9E5;
+  font-style: normal;
+}
+
+.text-orange {
+  color: #EC6437;
+}
+
+.btn-orange {
+  color: #fff;
+  background-color: #EC6437;
+  border-color: #EC6437;
+}
+
+.btn-orange:hover {
+  background-color: #7e280c;
+  border-color: #7e280c;
+}
+
+body {
+  background-color: #EB6F50;
+  color: black;
+}
+
+h1, .write {
+  font-family: "Lobster", cursive;
+}
+
+/*---pic drop---*/
+.picBox {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.picBox .img {
+  position: absolute;
+  width: 250px;
+  -webkit-transform: scale3d(0.5, 0.5, 1);
+          transform: scale3d(0.5, 0.5, 1);
+  border-radius: 9px;
+  -webkit-animation: mbt 3s 0s linear infinite both;
+          animation: mbt 3s 0s linear infinite both;
+  opacity: .5;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  font-size: 0;
+}
+
+.picBox .img h4 {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 100%;
+  line-height: 25px;
+  height: 25px;
+  opacity: 1;
+  /* background-image: linear-gradient(to right,  #EB6F50, rgba(0, 0, 0,0.5) , #EB6F50);*/
+  /*background-color: rgba(0,0,0,.7);*/
+  color: #fff;
+  font-size: 12px;
+  border-radius: 0px;
+  text-align: center;
+  border-bottom: 2px #912a11 dashed;
+}
+
+.picBox .img img {
+  width: 100%;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border-radius: 9px;
+}
+
+.picBox .img:hover {
+  opacity: 1;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  z-index: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.picBox .img:hover h4 {
+  opacity: 1;
+}
+
+.picBox .img:hover img {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+@-webkit-keyframes mbt {
+  0% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  100% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+}
+
+@keyframes mbt {
+  0% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  100% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+}
+
+.picBox .img:nth-child(1) {
+  left: calc( ( 1 - 1 ) * ( 100% - 250px ) / (5 - 1));
+}
+
+.picBox .img:nth-child(2) {
+  left: calc( ( 2 - 1 ) * ( 100% - 250px ) / (5 - 1));
+}
+
+.picBox .img:nth-child(3) {
+  left: calc( ( 3 - 1 ) * ( 100% - 250px ) / (5 - 1));
+}
+
+.picBox .img:nth-child(4) {
+  left: calc( ( 4 - 1 ) * ( 100% - 250px ) / (5 - 1));
+}
+
+.picBox .img:nth-child(5) {
+  left: calc( ( 5 - 1 ) * ( 100% - 250px ) / (5 - 1));
+}
+
+.picBox .img:nth-child(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: calc( 6.5s + 6.5s);
+          animation-duration: calc( 6.5s + 6.5s);
+}
+
+.picBox .img:nth-child(2) {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-duration: calc( 4.5s + 6.5s);
+          animation-duration: calc( 4.5s + 6.5s);
+}
+
+.picBox .img:nth-child(3) {
+  -webkit-animation-delay: -2.3s;
+          animation-delay: -2.3s;
+  -webkit-animation-duration: calc( 8.5s + 6.5s);
+          animation-duration: calc( 8.5s + 6.5s);
+}
+
+.picBox .img:nth-child(4) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: calc( 3.5s + 6.5s);
+          animation-duration: calc( 3.5s + 6.5s);
+}
+
+.picBox .img:nth-child(5) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: calc( 5.5s + 6.5s);
+          animation-duration: calc( 5.5s + 6.5s);
+}
+
+/*modal*/
+.bg2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%, transparent), color-stop(5%, rgba(0, 0, 0, 0.2)));
+  background-image: linear-gradient(transparent 95%, rgba(0, 0, 0, 0.2) 5%);
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+.bg-a {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.photo {
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
+  margin-left: -15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.bg-2color-1 {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #6EA9B1), color-stop(50%, #77ACB4));
+  background-image: linear-gradient(to right, #6EA9B1 50%, #77ACB4 50%);
+  background-repeat: no-repeat;
+}
+
+.bg-2color-2 {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #588A93), color-stop(50%, #629DA5));
+  background-image: linear-gradient(to right, #588A93 50%, #629DA5 50%);
+  background-repeat: no-repeat;
+}
+
+.pageShadow {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.btnCopy {
+  color: white;
+  border: 1px solid white;
+  background-color: #588A93;
+}
+
+.btnCopy:hover {
+  background-color: #456c73;
+  border-color: #e6e6e6;
+  color: #e6e6e6;
+}
+
+.btn-resume {
+  background-color: #EB6F50;
+  color: white;
+  border: 2px solid white;
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.btn-resume:hover {
+  -webkit-transform: rotate(9deg);
+          transform: rotate(9deg);
+}
+
+.cathandL {
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+  margin-bottom: -12px;
+}
+
+.cathandR {
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+  margin-bottom: -12px;
+}
+/*# sourceMappingURL=style.css.map */

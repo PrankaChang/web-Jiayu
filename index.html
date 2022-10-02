@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JIAYU</title>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
@@ -14,71 +16,74 @@
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/book.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link href="img/favicon.ico" rel="shortcut icon" />
-    <title>JiaYu Chang</title>
   </head>
-  <body id="particles-js">
-    <div>
-      <div class="position-absolute top-0 w-100">
-        <div class="container">
-          <div class="text-end pt-3">
-            <!------------------------------------about btn-->
-            <button
-              type="button"
-              class="btn btn-outline-light rounded-pill"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
-            >
-              ABOUT
-            </button>
+  <body>
+    <section>
+      <div class="container-fluid">
+        <div class="row flex-md-row-reverse">
+          <div class="col-md d-flex align-items-center">
+            <!---------------------about btn-->
+            <div class="p-3 position-absolute top-0 end-0">
+              <button
+                type="button"
+                class="btn btn-outline-light rounded-pill write"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                ABOUT
+              </button>
+            </div>
+            <!--txt-->
+            <div class="pt-5 p-md-2">
+              <h1 class="text-center">JIAYU CHANG ☺</h1>
+              <p class="fs-5 text-center">
+                Tresors du Bacchus is a small family run wine shop, based right
+                in the heart of the Sancerre.
+              </p>
+            </div>
           </div>
-          <!--------------------------------------h1-->
-          <h1 class="text-center text-orange">JIAYU CHANG ☺</h1>
-          <p class="fs-5 text-center">
-            Tresors du Bacchus is a small family run wine shop, based right in
-            the heart of the Sancerre.
-          </p>
-          <!--------------------------------------works pic-->
-          <div>
-            <div class="container py-5">
-              <!--------------------------------------works pic1-->
-              <div class="row">
-                <div class="col-md">
-                  <a href="./works_1.html" class="btn btn-pic overflow-hidden">
-                    <img
-                      src="https://picsum.photos/324/324"
-                      alt="作品一"
-                      class="img-fluid"
-                  /></a>
-                </div>
-                <!--------------------------------------works pic2-->
-                <div class="col-md">
-                  <a href="./works_1.html" class="btn btn-pic overflow-hidden">
-                    <img
-                      src="https://picsum.photos/324/324"
-                      alt="作品2"
-                      class="img-fluid"
-                  /></a>
-                </div>
-                <!--------------------------------------works pic3-->
-                <div class="col-md">
-                  <a href="./works_1.html" class="btn btn-pic overflow-hidden">
-                    <img
-                      src="https://picsum.photos/324/324"
-                      alt="作品3"
-                      class="img-fluid"
-                  /></a>
-                </div>
+          <div class="col-md-7">
+            <!------------------------picture-->
+            <div class="picBox d-flex">
+              <div class="img">
+                <h4>作品一</h4>
+                <a href="./works_1.html" class="btn">
+                  <img src="./img/index/test.png" alt=""
+                /></a>
+              </div>
+              <div class="img">
+                <h4>作品二</h4>
+                <a href="./works_2.html" class="btn">
+                  <img src="./img/index/test2.png" alt=""
+                /></a>
+              </div>
+              <div class="img">
+                <h4>作品三</h4>
+                <a href="./works_3.html" class="btn">
+                  <img src="./img/index/test3.png" alt=""
+                /></a>
+              </div>
+              <div class="img">
+                <h4>製作中</h4>
+                <a href="#" class="btn">
+                  <img src="./img/index/test4.png" alt=""
+                /></a>
+              </div>
+              <div class="img">
+                <h4>製作中</h4>
+                <a href="#" class="btn">
+                  <img src="./img/index/test4.png" alt=""
+                /></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Modal   彈出畫面 -->
+    <!--------------------------------------------- Modal -->
     <div
       class="modal fade"
       id="staticBackdrop"
@@ -88,169 +93,194 @@
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog" id="wrapper">
-        <div>
-          <div class="modal-content bg-book" id="container">
-            <!---->
-            <section class="open-book">
-              <header>
-                <h1>ABOUT</h1>
-                <!---------------------------------closeBTN--->
-                <button
-                  type="button"
-                  class="btn-close position-absolute top-0 end-0 fs-3"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </header>
-              <article>
-                <!---------------------------------BASIC INFO--->
-                <div>
-                  <h2 class="fs-3 mb-3">
-                    <strong>基本資料 </strong>/BASIC INFO
-                  </h2>
-                  <img
-                    src="https://picsum.photos/id/1027/150/200"
-                    alt="myself photo"
-                    class="float-start m-3"
-                  />
-                  <p>
-                    這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一堆字這裡有一
-                  </p>
-                </div>
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content p-3 bg-a">
+          <!--close btn-->
+          <div class="text-end">
+            <button
+              type="button"
+              class="btn-close bg-light rounded-pill p-3 border border-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
 
-                <!----------------------------------------value--->
-                <dl>
-                  <h2 class="fs-3"><strong>核心價值 </strong>/VALUES</h2>
-                  <div class="position-relative mt-3">
-                    <!--line-->
-                    <div
-                      class="border-top border-dark position-absolute top-50 w-75 mx-5"
-                    ></div>
-                    <ul class="list-unstyled d-flex justify-content-between">
-                      <!--1-->
-                      <li class="d-block">
-                        <button
-                          class="btn btn-light rounded-circle border border-2 border-dark d-flex align-items-center"
-                          style="width: 3rem; height: 3rem"
-                        >
-                          <span class="material-symbols-outlined"> token </span>
-                        </button>
-                      </li>
-                      <!--2-->
-                      <li class="d-block">
-                        <button
-                          class="btn btn-light rounded-circle border border-2 border-dark d-flex align-items-center"
-                          style="width: 3rem; height: 3rem"
-                        >
-                          <span class="material-symbols-outlined"> token </span>
-                        </button>
-                      </li>
-                      <!--3-->
-                      <li class="d-block">
-                        <button
-                          class="btn btn-light rounded-circle border border-2 border-dark d-flex align-items-center"
-                          style="width: 3rem; height: 3rem"
-                        >
-                          <span class="material-symbols-outlined"> token </span>
-                        </button>
-                      </li>
-                      <!--4-->
-                      <li class="d-block">
-                        <button
-                          class="btn btn-light rounded-circle border border-2 border-dark d-flex align-items-center"
-                          style="width: 3rem; height: 3rem"
-                        >
-                          <span class="material-symbols-outlined"> token </span>
-                        </button>
-                      </li>
-                    </ul>
+          <div class="px-5 bg-gradient position-relative">
+            <!---book-->
+            <div class="modal-body bg-white py-0">
+              <!---contente -->
+              <div class="container-fluid py-0 bg2">
+                <div class="row">
+                  <!--left page-->
+                  <div class="col-md ps-3 pageShadow">
+                    <div class="py-5 border-start border-danger">
+                      <!--left content-->
+
+                      <div class="container">
+                        <div class="row justify-content-end">
+                          <div class="col-md-5 position-relative mb-4">
+                            <!--photo-->
+                            <figure class="photo bg-white p-3">
+                              <div>
+                                <img
+                                  src="./img/index/photo.png"
+                                  alt="photo"
+                                  class="img-fluid mb-md-2"
+                                />
+                              </div>
+                              <div>
+                                <img
+                                  src="./img/index/sign.png"
+                                  alt="sign"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </figure>
+                          </div>
+                          <div class="col-md-7">
+                            <h4>關於我 /ABOUT ME</h4>
+                            <p>
+                              Hi I’m Chia-Yu ! I’ve spent the last 7 years
+                              working as a UX Designer. Luckily, I gained
+                              valuable experiences from each project I’ve worked
+                              before. And I harnessed the experience to build my
+                              vision and direct it towards meaningful, and
+                              accessible solutions or products. Let’s see what
+                              else we can do together!
+                            </p>
+                          </div>
+
+                          <div class="mb-3">
+                            <h4>特長 /SPECILITY</h4>
+                            <p>
+                              “Bridging the gap between user and business Needs”
+                            </p>
+                          </div>
+                        </div>
+                        <!--圓形圖-->
+
+                        <div class="mb-3">
+                          <img src="./img/index/circle.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <!--文字-->
-                  <div class="mx-2">
-                    <ul class="list-unstyled d-flex justify-content-between">
-                      <!--word-1-->
-                      <li class="d-block">
-                        <small>1234</small>
-                      </li>
-                      <!--word-2-->
-                      <li class="d-block">
-                        <small>1234</small>
-                      </li>
-                      <!--word-3-->
-                      <li class="d-block">
-                        <small>1234</small>
-                      </li>
-                      <!--word-4-->
-                      <li class="d-block">
-                        <small>1234</small>
-                      </li>
-                    </ul>
+                  <!--right page-->
+                  <div class="col-md pageShadow">
+                    <div class="py-5 border-end border-danger h-100">
+                      <div class="bg-2color-1 p-3 py-md-5">
+                        <div class="row">
+                          <!----------------------------------------skills--->
+                          <div class="col-md-8">
+                            <h4 class="fs-3">
+                              <strong>核心技能 </strong>/SKILLS
+                            </h4>
+                            <div class="m-3">
+                              <ul class="list-unstyled">
+                                <li>＃Game UX</li>
+                                <li>＃Prototyping</li>
+                                <li>＃UI Flow Design</li>
+                                <li>＃User research methods</li>
+                                <li>＃Basic Front-End Development</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-------------------------download-->
+                          <div class="col-md mb-5">
+                            <a
+                              href="./download/text.png"
+                              download="pic.png"
+                              class="btn d-flex align-items-center justify-content-center btn-resume"
+                            >
+                              <span class="material-icons">
+                                cloud_download
+                              </span>
+                              <span class="ms-1"> Résumé</span>
+                            </a>
+                          </div>
+                        </div>
+                        <!----------------------------------------tools--->
+                        <div>
+                          <h4 class="fs-3 mb-3">
+                            <strong>設計工具 </strong>/TOOLS
+                          </h4>
+                          <p>
+                            Currently Shifted from using Sketch, Axure, to Figma
+                            &Protopie
+                          </p>
+                        </div>
+                      </div>
+                      <div class="bg-2color-2 p-md-3">
+                        <!----touch-->
+                        <div class="row">
+                          <div class="col p-3 py-md-5">
+                            <h4><strong>GET IN TOUCH</strong></h4>
+                            <b class="text-white">EMAIL</b>
+                            <p class="text-white" id="copyTXT">
+                              jenuschangwork@gmail.com
+                            </p>
+                            <button
+                              type="button"
+                              class="btn btnCopy rounded-pill"
+                              onclick="copyEvent('copyTXT')"
+                            >
+                              COPY
+                            </button>
+                          </div>
+                          <div class="col py-md-5">
+                            <a
+                              href="https://www.linkedin.com/in/jenuschang/"
+                              class="btn"
+                            >
+                              <img
+                                src="./img/index/in.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </a>
+
+                            <a
+                              href="mailto: jenuschangwork@gmail.com"
+                              class="btn"
+                            >
+                              <img
+                                src="./img/index/mail.png"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </dl>
-                <!----------------------------------------skills--->
-                <h2 class="fs-3"><strong>核心技能 </strong>/SKILLS</h2>
-                <div class="m-3">
-                  <ul class="list-unstyled">
-                    <li>＃Game UX</li>
-                    <li>＃Prototyping</li>
-                    <li>＃UI Flow Design</li>
-                    <li>＃User research methods</li>
-                    <li>＃Basic Front-End Development</li>
-                  </ul>
                 </div>
-                <!----------------------------------------tools--->
-                <h2 class="fs-3 mb-3"><strong>設計工具 </strong>/TOOLS</h2>
-                <dd>
-                  Currently I Shifted from using <mark> Sketch</mark>,<mark>
-                    Axure</mark
-                  >, to <mark>Figma &Protopie</mark>
-                </dd>
-                <!-----------------------------------------get intouch-->
-                <dl>
-                  <h2 class="fs-3 mb-3"><strong>GET IN TOUCH</strong></h2>
-                  <div class="d-inline-flex">
-                    <a href="mailto:123@gmail.com">
-                      <span class="material-symbols-outlined"> mail </span>
-                      :xxxxxxx@gmail.com</a
-                    >
-                  </div>
-                </dl>
-                <!---------------------------------------download-->
-                <figcaption class="blockquote-footer text-end">
-                  to click
-                  <a href="./download/text.png" download="pic.png">
-                    <mark class="orange">here</mark></a
-                  >
-                  to download Resume.
-                </figcaption>
-                <div class="text-center">
-                  <img
-                    src="./img/index/sign.png"
-                    alt="sign"
-                    class="img-fluid mt-3"
-                  />
-                </div>
-              </article>
-              <footer>
-                <ol id="page-numbers">
-                  <li>1</li>
-                  <li>2</li>
-                </ol>
-              </footer>
-            </section>
-            <!---->
+              </div>
+            </div>
+            <!---book end-->
+            <!--
+            <div class="position-fixed bottom-0 end-0 cathandR">
+              <img src="./img/index/cat.png" alt="" class="img-fluid" />
+            </div>
+            <div class="position-fixed bottom-0 start-0 cathandL">
+              <img src="./img/index/cat.png" alt="" class="img-fluid" />
+            </div>-->
           </div>
         </div>
       </div>
     </div>
-    <!---->
+    <!--js-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="./js/particlesSet.js"></script>
+    <script>
+      function copyEvent(id) {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy");
+      }
+    </script>
   </body>
 </html>
