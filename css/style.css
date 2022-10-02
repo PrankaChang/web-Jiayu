@@ -32,12 +32,12 @@ h1, .write {
   font-family: "Lobster", cursive;
 }
 
-.imgs a img {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+.hoverImage {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.imgs a img:hover {
+.hoverImage:hover {
   -webkit-box-shadow: #26394d 0px 20px 30px -10px;
           box-shadow: #26394d 0px 20px 30px -10px;
 }
@@ -103,7 +103,7 @@ h1, .write {
 
 .bg-a {
   background-color: rgba(0, 0, 0, 0);
-  border: none;
+  border: 0px solid;
 }
 
 .photo {
