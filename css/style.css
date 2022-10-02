@@ -41,15 +41,14 @@ h1, .write {
 
 .picBox .img {
   position: absolute;
-  background-color: white;
   border-radius: 5em;
   -webkit-animation: mbt 5s 0s linear infinite both;
           animation: mbt 5s 0s linear infinite both;
-  width: 50%;
+  width: 40%;
 }
 
 .picBox .img:nth-child(1) {
-  left: 200px;
+  right: 0px;
   -webkit-animation-delay: -2s;
           animation-delay: -2s;
 }
@@ -62,6 +61,10 @@ h1, .write {
   top: 0;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+}
+
+.picBox .img h4 {
+  text-align: center;
 }
 
 .picBox .img:hover {
