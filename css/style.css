@@ -33,61 +33,41 @@ h1, .write {
 
 /*---pic drop---*/
 .picBox {
+  position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  position: relative;
 }
 
 .picBox .img {
   position: absolute;
-  width: 250px;
-  -webkit-transform: scale3d(0.5, 0.5, 1);
-          transform: scale3d(0.5, 0.5, 1);
-  border-radius: 9px;
-  -webkit-animation: mbt 3s 0s linear infinite both;
-          animation: mbt 3s 0s linear infinite both;
-  opacity: .5;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-  font-size: 0;
+  background-color: white;
+  border-radius: 5em;
+  -webkit-animation: mbt 5s 0s linear infinite both;
+          animation: mbt 5s 0s linear infinite both;
+  width: 50%;
 }
 
-.picBox .img h4 {
-  position: absolute;
-  left: 0;
-  top: -40px;
-  width: 100%;
-  line-height: 25px;
-  height: 25px;
-  opacity: 1;
-  /* background-image: linear-gradient(to right,  #EB6F50, rgba(0, 0, 0,0.5) , #EB6F50);*/
-  /*background-color: rgba(0,0,0,.7);*/
-  color: #fff;
-  font-size: 12px;
-  border-radius: 0px;
-  text-align: center;
-  border-bottom: 2px #912a11 dashed;
+.picBox .img:nth-child(1) {
+  left: 200px;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
 }
 
-.picBox .img img {
-  width: 100%;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-  border-radius: 9px;
+.picBox .img:nth-child(2) {
+  left: 100px;
+}
+
+.picBox .img:nth-child(3) {
+  top: 0;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .picBox .img:hover {
-  opacity: 1;
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
   z-index: 1;
-  -webkit-transform: scale3d(1, 1, 1);
-          transform: scale3d(1, 1, 1);
-}
-
-.picBox .img:hover h4 {
-  opacity: 1;
 }
 
 .picBox .img:hover img {
@@ -97,8 +77,8 @@ h1, .write {
 
 @-webkit-keyframes mbt {
   0% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
+    -webkit-transform: translateY(-600px);
+            transform: translateY(-600px);
   }
   100% {
     -webkit-transform: translateY(100vh);
@@ -108,68 +88,13 @@ h1, .write {
 
 @keyframes mbt {
   0% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
+    -webkit-transform: translateY(-600px);
+            transform: translateY(-600px);
   }
   100% {
     -webkit-transform: translateY(100vh);
             transform: translateY(100vh);
   }
-}
-
-.picBox .img:nth-child(1) {
-  left: calc( ( 1 - 1 ) * ( 100% - 250px ) / (5 - 1));
-}
-
-.picBox .img:nth-child(2) {
-  left: calc( ( 2 - 1 ) * ( 100% - 250px ) / (5 - 1));
-}
-
-.picBox .img:nth-child(3) {
-  left: calc( ( 3 - 1 ) * ( 100% - 250px ) / (5 - 1));
-}
-
-.picBox .img:nth-child(4) {
-  left: calc( ( 4 - 1 ) * ( 100% - 250px ) / (5 - 1));
-}
-
-.picBox .img:nth-child(5) {
-  left: calc( ( 5 - 1 ) * ( 100% - 250px ) / (5 - 1));
-}
-
-.picBox .img:nth-child(1) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-duration: calc( 6.5s + 6.5s);
-          animation-duration: calc( 6.5s + 6.5s);
-}
-
-.picBox .img:nth-child(2) {
-  -webkit-animation-delay: -3s;
-          animation-delay: -3s;
-  -webkit-animation-duration: calc( 4.5s + 6.5s);
-          animation-duration: calc( 4.5s + 6.5s);
-}
-
-.picBox .img:nth-child(3) {
-  -webkit-animation-delay: -2.3s;
-          animation-delay: -2.3s;
-  -webkit-animation-duration: calc( 8.5s + 6.5s);
-          animation-duration: calc( 8.5s + 6.5s);
-}
-
-.picBox .img:nth-child(4) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: calc( 3.5s + 6.5s);
-          animation-duration: calc( 3.5s + 6.5s);
-}
-
-.picBox .img:nth-child(5) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: calc( 5.5s + 6.5s);
-          animation-duration: calc( 5.5s + 6.5s);
 }
 
 /*modal*/

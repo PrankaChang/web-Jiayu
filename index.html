@@ -50,31 +50,19 @@
               <div class="img">
                 <h4>作品一</h4>
                 <a href="./works_1.html" class="btn">
-                  <img src="./img/index/test.png" alt=""
+                  <img src="./img/index/test.png" alt="" class="img-fluid"
                 /></a>
               </div>
               <div class="img">
                 <h4>作品二</h4>
                 <a href="./works_2.html" class="btn">
-                  <img src="./img/index/test2.png" alt=""
+                  <img src="./img/index/test2.png" alt="" class="img-fluid"
                 /></a>
               </div>
               <div class="img">
                 <h4>作品三</h4>
                 <a href="./works_3.html" class="btn">
-                  <img src="./img/index/test3.png" alt=""
-                /></a>
-              </div>
-              <div class="img">
-                <h4>製作中</h4>
-                <a href="#" class="btn">
-                  <img src="./img/index/test4.png" alt=""
-                /></a>
-              </div>
-              <div class="img">
-                <h4>製作中</h4>
-                <a href="#" class="btn">
-                  <img src="./img/index/test4.png" alt=""
+                  <img src="./img/index/test3.png" alt="" class="img-fluid"
                 /></a>
               </div>
             </div>
@@ -275,7 +263,14 @@
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <script>
+      $(document).ready(function () {});
+      //copy
       function copyEvent(id) {
         var str = document.getElementById(id);
         window.getSelection().selectAllChildren(str);
