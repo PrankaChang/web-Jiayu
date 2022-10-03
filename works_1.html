@@ -243,7 +243,11 @@
 
         <div class="w-75 position-absolute top-50 start-50 translate-middle">
           <h2 class="text-center fs-1 fw-bold">NEXT</h2>
-          <div class="progress">
+          <div
+            class="progress"
+            style="background-color: rgba(0, 0, 0, 0.3)"
+            id="bar-bg"
+          >
             <div
               class="progress-bar bg-secondary"
               role="progressbar"
@@ -310,6 +314,7 @@
           //if see footer
           if (point + window.innerHeight >= pointBPN) {
             boolTime = true;
+            //console.log("go");
           } else {
             boolTime = false;
           }
@@ -321,20 +326,24 @@
 
           if (boolTime) {
             count++;
-            if (count == 10) {
+            refreshBar();
+            if (count > 10) {
               window.location = "./works_2.html";
             }
           } else {
             count = 0;
+            $("#bar").css("width", 0);
           }
-          refreshBar();
         }
+        var addw = $("#bar-bg").width() / 10;
 
         function refreshBar() {
+          var tobeW = count * addw;
           $("#bar")
-            .attr("aria-valuenow", count * 10)
-            .css("width", count * 10 + "%");
-          //.animate({ width: count * 10 + "%" }, 1000);
+            .attr("aria-valuenow", (count + 1) * 10)
+            .animate({ width: tobeW });
+          // .css("width", tobeW);
+          //.animate({ width: tobwW }, 1000);
           // .css("width", count * 10 + "%");
 
           //console.log(bar.width());

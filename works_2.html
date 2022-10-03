@@ -314,7 +314,11 @@
         <img src="./img/works2/next.png" alt="next" class="img-fluid" />
         <div class="w-75 position-absolute top-50 start-50 translate-middle">
           <h2 class="text-center fs-1 fw-bold text-dark">NEXT</h2>
-          <div class="progress">
+          <div
+            class="progress"
+            style="background-color: rgba(0, 0, 0, 0.3)"
+            id="bar-bg"
+          >
             <div
               class="progress-bar bg-lightGray"
               role="progressbar"
@@ -407,20 +411,21 @@
           if (boolTime) {
             count++;
             refreshBar();
-            if (count == 10) {
-              window.location = "./works_3.html";
+            if (count > 10) {
+              window.location = "./works_2.html";
             }
           } else {
             count = 0;
+            $("#bar").css("width", 0);
           }
         }
+        var addw = $("#bar-bg").width() / 10;
 
         function refreshBar() {
+          var tobeW = count * addw;
           $("#bar")
-            .attr("aria-valuenow", count * 10)
-            .css("width", count * 10 + "%");
-
-          //console.log(bar.width());
+            .attr("aria-valuenow", (count + 1) * 10)
+            .animate({ width: tobeW });
         }
       });
     </script>
