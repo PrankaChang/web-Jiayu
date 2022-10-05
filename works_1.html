@@ -132,7 +132,7 @@
         <!----------------video  要mp4---------------------------->
         <!-------------------------------------------------------->
         <!-------------------------------------------------------->
-        <div class="my-5" data-aos="fade-in">
+        <div class="my-5" data-aos="fade-in" id="video1-box">
           <h4 class="text-center h4 mb-5">當時版本demo展示</h4>
           <div>
             <video
@@ -278,7 +278,7 @@
 
       $(document).ready(function () {
         //video1
-        var video1 = $("#video1");
+        var video1 = $("#video1-box");
         var pointVideo1Start = video1.offset().top;
         var pointVideo1End = pointVideo1Start + video1.height();
 
@@ -287,7 +287,7 @@
 
         //next page
         var boxPgNext = $("#goNext");
-        var pointBPN = boxPgNext.offset().top + boxPgNext.height();
+        var pointBPN = boxPgNext.offset().top + boxPgNext.height() / 2;
         var boolTime = false;
         //time
         setInterval(timer, 1000);
@@ -304,10 +304,10 @@
           }
           //if enter video1 box
           if (point > pointVideo1Start && point < pointVideo1End) {
-            video1.trigger("play");
+            $("#video1").trigger("play");
             //console.log("play");
           } else {
-            video1.trigger("pause");
+            $("#video1").trigger("pause");
             //console.log("pause");
           }
 

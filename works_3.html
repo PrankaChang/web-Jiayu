@@ -69,7 +69,10 @@
           </div>
         </div>
         <!--before phone-3-->
-        <div class="position-absolute top-50 start-50 translate-middle">
+        <div
+          class="position-absolute top-50 start-50 translate-middle"
+          id="video1-box"
+        >
           <figure class="phone bigOnePhone">
             <div class="phoneCase">
               <div class="phoneContent">
@@ -367,7 +370,10 @@
             </div>
             <!--研習系統-小遊戲1-->
             <div class="row mb-3 justify-content-center">
-              <div class="col-md-5 d-flex justify-content-center">
+              <div
+                class="col-md-5 d-flex justify-content-center"
+                id="video2-box"
+              >
                 <figure class="phone scaleSmall bg-white">
                   <div class="phoneCase bg-white">
                     <div class="phoneContent">
@@ -398,7 +404,10 @@
             </div>
             <!--研習系統-小遊戲2-->
             <div class="row mb-3 justify-content-center">
-              <div class="col-md-5 d-flex justify-content-center">
+              <div
+                class="col-md-5 d-flex justify-content-center"
+                id="video3-box"
+              >
                 <figure class="phone scaleSmall" id="iphone">
                   <div class="phoneCase">
                     <div class="phoneContent">
@@ -469,7 +478,9 @@
         class="container-fluid position-relative d-flex justify-content-center"
       >
         <img src="./img/works3/next.png" alt="next" class="img-fluid" />
-        <div class="w-75 position-absolute top-50 start-50 translate-middle">
+        <div
+          class="w-75 position-absolute top-50 start-50 translate-middle mt-5"
+        >
           <h2 class="text-center fs-1 fw-bold text-white">NEXT</h2>
           <div
             class="progress"
@@ -506,16 +517,16 @@
 
       $(document).ready(function () {
         //video1
-        var video1 = $("#video1");
+        var video1 = $("#video1-box");
         var pointVideo1Start = video1.offset().top;
         var pointVideo1End = pointVideo1Start + video1.height();
         //video2
-        var video2 = $("#video2");
+        var video2 = $("#video2-box");
         var pointVideo2Start = video2.offset().top;
         var pointVideo2End = pointVideo2Start + video2.height();
 
         //video3
-        var video3 = $("#video3");
+        var video3 = $("#video3-box");
         var pointVideo3Start = video3.offset().top;
         var pointVideo3End = pointVideo3Start + video3.height();
         //mouse
@@ -523,7 +534,8 @@
 
         //next page
         var boxPgNext = $("#goNext");
-        var pointBPN = boxPgNext.offset().top + boxPgNext.height();
+        var pointBPN = boxPgNext.offset().top + boxPgNext.height() / 2;
+        // var pointBPN = boxPgNext.offset().top + boxPgNext.height();
         var boolTime = false;
         //time
         setInterval(timer, 1000);
@@ -540,33 +552,35 @@
 
           //if enter video1 box
           if (point > pointVideo1Start && point < pointVideo1End) {
-            video1.trigger("play");
+            $("#video1").trigger("play");
             //console.log("play");
           } else {
-            video1.trigger("pause");
+            $("#video1").trigger("pause");
             //console.log("pause");
           }
 
           //if enter video2 box
           if (point > pointVideo2Start && point < pointVideo2End) {
-            video2.trigger("play");
+            $("#video2").trigger("play");
             //console.log("play");
           } else {
-            video2.trigger("pause");
+            $("#video2").trigger("pause");
             //console.log("pause");
           }
 
           //if enter video3 box
           if (point > pointVideo3Start && point < pointVideo3End) {
-            video3.trigger("play");
+            $("#video3").trigger("play");
             //console.log("play");
           } else {
-            video3.trigger("pause");
+            $("#video3").trigger("pause");
             //console.log("pause");
           }
 
           //if see footer
-          if (point + window.innerHeight >= pointBPN) {
+          //console.log("1." + point + window.innerHeight);
+          //console.log("pointBPN=" + pointBPN);
+          if (point + window.innerHeight > pointBPN) {
             // console.log("go");
             boolTime = true;
           } else {
@@ -583,7 +597,7 @@
             count++;
             refreshBar();
             if (count > 10) {
-              window.location = "./works_1.html";
+              //  window.location = "./works_1.html";
             }
           } else {
             count = 0;
