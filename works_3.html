@@ -318,7 +318,7 @@
       <!------------------------------------------------->
       <!------------------------------------------------->
       <div class="bg-img-w3 mt-md-5 pt-5">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row justify-content-end py-5">
             <div class="col-md-7 text-md-start text-center">
               <h4>在女性向類型遊戲 <br />進行玩法發散的小遊戲交互demo設計</h4>
@@ -464,8 +464,10 @@
     <!----------------next-------------------------->
     <!---------------------------------------------->
     <!---------------------------------------------->
-    <footer class="bg-secondary" id="goNext">
-      <div class="container-fluid position-relative">
+    <footer id="goNext" style="background-color: #000">
+      <div
+        class="container-fluid position-relative d-flex justify-content-center"
+      >
         <img src="./img/works3/next.png" alt="next" class="img-fluid" />
         <div class="w-75 position-absolute top-50 start-50 translate-middle">
           <h2 class="text-center fs-1 fw-bold text-white">NEXT</h2>
@@ -565,11 +567,11 @@
 
           //if see footer
           if (point + window.innerHeight >= pointBPN) {
-            //console.log("go");
+            // console.log("go");
             boolTime = true;
           } else {
             boolTime = false;
-            //console.log("exit");
+            // console.log("exit");
           }
         });
 
