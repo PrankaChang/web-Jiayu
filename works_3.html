@@ -534,7 +534,7 @@
 
         //next page
         var boxPgNext = $("#goNext");
-        var pointBPN = boxPgNext.offset().top + boxPgNext.height() / 2;
+        var pointBPN = boxPgNext.offset().top + (boxPgNext.height() / 3) * 2;
         // var pointBPN = boxPgNext.offset().top + boxPgNext.height();
         var boolTime = false;
         //time
@@ -578,8 +578,7 @@
           }
 
           //if see footer
-          //console.log("1." + point + window.innerHeight);
-          //console.log("pointBPN=" + pointBPN);
+
           if (point + window.innerHeight > pointBPN) {
             // console.log("go");
             boolTime = true;
@@ -597,7 +596,7 @@
             count++;
             refreshBar();
             if (count > 10) {
-              //  window.location = "./works_1.html";
+              window.location = "./works_1.html";
             }
           } else {
             count = 0;
