@@ -64,7 +64,7 @@ body {
 }
 
 .bg-img-w3 {
-  background: url(.././img/works3/bg.png) no-repeat center/auto 100%;
+  background: rgba(113, 86, 59, 0.4) url(.././img/works3/bg.png) no-repeat center/100%;
 }
 
 .bg-img-w3-2 {
