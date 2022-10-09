@@ -160,14 +160,12 @@ h1, .write {
 }
 
 .cathandL {
-  -webkit-transform: rotate(7deg);
-          transform: rotate(7deg);
-  margin-bottom: -12px;
+  margin-bottom: -100px;
+  margin-left: -68px;
 }
 
 .cathandR {
-  -webkit-transform: rotate(-7deg);
-          transform: rotate(-7deg);
-  margin-bottom: -12px;
+  margin-bottom: -100px;
+  margin-right: -65px;
 }
 /*# sourceMappingURL=style.css.map */
