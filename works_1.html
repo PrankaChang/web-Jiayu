@@ -32,7 +32,7 @@
         id="goIndex"
       >
         <span class="material-icons">reply_all </span>
-        <span class="mx-2" id="btn-txt"> JIAYU CHANG ☺</span>
+        <span class="mx-2" id="btn-txt"> J.C. Chang</span>
       </button>
       <!----------------banner----------------------------->
       <!--------------------------------------------------->
@@ -327,7 +327,7 @@
           if (boolTime) {
             count++;
             refreshBar();
-            if (count > 10) {
+            if (count > 5) {
               window.location = "./works_2.html";
             }
           } else {
@@ -335,12 +335,12 @@
             $("#bar").css("width", 0);
           }
         }
-        var addw = $("#bar-bg").width() / 10;
+        var addw = $("#bar-bg").width() / 5;
 
         function refreshBar() {
           var tobeW = count * addw;
           $("#bar")
-            .attr("aria-valuenow", (count + 1) * 10)
+            .attr("aria-valuenow", (count + 1) * (100 / 5))
             .animate({ width: tobeW });
           // .css("width", tobeW);
           //.animate({ width: tobwW }, 1000);

@@ -32,7 +32,7 @@
         id="goIndex"
       >
         <span class="material-icons">reply_all </span>
-        <span class="mx-2" id="btn-txt"> JIAYU CHANG ☺</span>
+        <span class="mx-2" id="btn-txt">J.C. Chang</span>
       </button>
       <!----------------banner phone----------------------------->
       <!--------------------------------------------------->
@@ -219,7 +219,7 @@
       <div class="container-fluid">
         <div class="row my-5 py-5" data-aos="fade-up">
           <!--phone-left-->
-          <div class="col-6 col-md-4 d-flex justify-content-md-end">
+          <div class="col-6 col-md-4 d-flex justify-content-center">
             <div class="d-flex flex-column">
               <figure class="phone scaleSmall">
                 <div class="phoneCase">
@@ -233,11 +233,11 @@
                 </div>
               </figure>
 
-              <small class="text-center me-3">競品：一念逍遙城鎮</small>
+              <small class="text-center">競品：一念逍遙城鎮</small>
             </div>
           </div>
           <!--phone-right-->
-          <div class="col-6 col-md-4 pt-5 mb-3">
+          <div class="col-6 col-md-4 pt-5 mb-3 d-flex justify-content-center">
             <div class="d-flex flex-column pt-5 mt-5">
               <figure class="phone scaleSmall">
                 <div class="phoneCase">
@@ -250,11 +250,11 @@
                   </div>
                 </div>
               </figure>
-              <small class="text-center me-3">優化方案</small>
+              <small class="text-center">優化方案</small>
             </div>
           </div>
           <!--txt-->
-          <div class="col-md-3 align-self-center">
+          <div class="col-md-3 align-self-center justify-content-center">
             <div>
               <h5 class="text-orange">
                 原競品的城鎮功能散落 各系統養成引導薄弱
@@ -269,8 +269,9 @@
       <!---------------------------------------------------------------->
       <div class="container-fluid">
         <div class="row my-5 py-5" data-aos="fade-up">
+          <div class="col-md-1"></div>
           <!--txt-->
-          <div class="col-md-4 align-self-center">
+          <div class="col-md-3 align-self-center d-flex justify-content-center">
             <div>
               <h5 class="text-orange">
                 一念手動戰鬥移動主要靠點擊光標移動，搖桿形同虛設
@@ -281,7 +282,7 @@
             </div>
           </div>
           <!--phone-center-->
-          <div class="col-6 col-md-4 pt-5 d-flex justify-content-end">
+          <div class="col-6 col-md-4 pt-5 d-flex justify-content-center">
             <div class="d-flex flex-column pt-5 mt-5">
               <figure class="phone scaleSmall">
                 <div class="phoneCase">
@@ -294,11 +295,11 @@
                   </div>
                 </div>
               </figure>
-              <small class="text-center me-3">優化方案</small>
+              <small class="text-center">優化方案</small>
             </div>
           </div>
           <!--phone-right-->
-          <div class="col-6 col-md-4">
+          <div class="col-6 col-md-4 d-flex justify-content-center">
             <div class="d-flex flex-column">
               <figure class="phone scaleSmall">
                 <div class="phoneCase">
@@ -312,7 +313,7 @@
                 </div>
               </figure>
 
-              <small class="text-center me-3">競品：一念逍遙城鎮</small>
+              <small class="text-center">競品：一念逍遙城鎮</small>
             </div>
           </div>
         </div>
@@ -595,7 +596,7 @@
           if (boolTime) {
             count++;
             refreshBar();
-            if (count > 10) {
+            if (count > 5) {
               window.location = "./works_1.html";
             }
           } else {
@@ -603,12 +604,12 @@
             $("#bar").css("width", 0);
           }
         }
-        var addw = $("#bar-bg").width() / 10;
+        var addw = $("#bar-bg").width() / 5;
 
         function refreshBar() {
           var tobeW = count * addw;
           $("#bar")
-            .attr("aria-valuenow", (count + 1) * 10)
+            .attr("aria-valuenow", (count + 1) * (100 / 5))
             .animate({ width: tobeW });
         }
       });
