@@ -43,14 +43,10 @@ h1, .write {
           box-shadow: #26394d 0px 20px 30px -10px;
 }
 
-.borderStyle {
-  border-left: 1px solid #000;
-}
-
-@media (max-width: 768px) {
-  .borderStyle {
-    border-left: 0px solid #000;
-  }
+.line {
+  background: url("../img/index/line.svg") repeat-y top/100% auto;
+  height: 100%;
+  width: 100%;
 }
 
 /*---pic drop---*/
