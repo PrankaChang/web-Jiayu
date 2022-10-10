@@ -44,7 +44,7 @@ h1, .write {
 }
 
 .line {
-  background: url("../img/index/line.svg") repeat-y top/100% auto;
+  background: url("../img/index/line.svg") repeat-y top/15% auto;
   height: 100%;
   width: 100%;
 }
