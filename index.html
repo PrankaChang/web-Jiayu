@@ -22,10 +22,10 @@
   </head>
   <body>
     <header class="container-fluid">
-      <div class="p-3 text-end">
+      <div class="pt-3 text-end maxW">
         <button
           type="button"
-          class="btn btn-outline-light rounded-pill write px-4 border-2"
+          class="btn btn-outline-light rounded-pill write px-4 border-2 fs-txt"
           data-bs-toggle="modal"
           data-bs-target="#staticBackdrop"
         >
@@ -33,51 +33,158 @@
         </button>
       </div>
     </header>
-    <section>
-      <div class="container">
-        <div class="row flex-md-row-reverse">
+    <section class="position-relative">
+      <div class="container-fluid">
+        <div class="row flex-md-row-reverse maxW">
           <div
-            class="col-md-4 d-flex align-items-center justify-content-center"
+            class="col-md-5 d-flex align-items-center justify-content-center mb-5 mb-md-0"
           >
             <!--txt-->
             <div>
-              <h1 class="text-center">
-                <img src="./img/index/logo.png" alt="logo" class="img-fluid" />
+              <h1
+                class="text-center d-flex align-items-center justify-content-center fs-title txtShadow"
+              >
+                C.Y. CHANG
+                <div class="w-25">
+                  <img
+                    src="./img/index/logo.png"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                </div>
               </h1>
-              <p class="fs-5 text-center write">
+              <p class="fs-txt text-center txtShadow mb-2 mb-md-5">
                 “Bridging the gap <br />
                 between user and business Needs”
               </p>
+
+              <!--pic-people-->
+              <div class="w-50 float-end mt-md-5 pt-md-5">
+                <img
+                  src="./img/index/bg-4.png"
+                  alt="doodle"
+                  class="img-fluid"
+                />
+              </div>
             </div>
           </div>
-          <div class="col-md-1 py-3">
-            <div class="line d-none d-md-block"></div>
-          </div>
+
           <div class="col-md-7 py-2">
             <!---picture-->
-            <div class="row">
-              <!--124-->
-              <div class="col">
-                <a href="./works_1.html" class="btn p-0 mb-5 hoverImage">
-                  <img src="./img/index/work1.png" alt="1" class="img-fluid"
-                /></a>
-                <a href="./works_2.html" class="btn p-0 mb-5 hoverImage">
-                  <img src="./img/index/work2.png" alt="2" class="img-fluid"
-                /></a>
-                <!--
-                <a href="#" class="btn mb-5 p-0 hoverImage">
-                  <img src="./img/index/work4.png" alt="4" class="img-fluid"
-                /></a>-->
+            <div class="row justify-content-center justify-content-around">
+              <!--1,2-->
+              <div class="col-11 col-md-6 col-lg-5 mb-5 mb-md-0">
+                <!--1-->
+                <div
+                  class="position-relative mb-5 pb-5 d-flex justify-content-center"
+                >
+                  <!--pic-doodle-->
+                  <div
+                    class="w-25 position-absolute top-0 start-0 translate-middle"
+                  >
+                    <img
+                      src="./img/index/bg-1.png"
+                      alt="doodle"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <a
+                    href="./works_1.html"
+                    class="btn p-0 hoverImage position-relative rotate-5 w-75 mt-5"
+                  >
+                    <div>
+                      <img
+                        src="./img/index/work1.png"
+                        alt="1"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <!------------------sticker-left-->
+                    <div class="topLeft">
+                      <div class="sticker rotate-40"></div>
+                    </div>
+
+                    <!------------------sticker-right-->
+                    <div class="bottomRight">
+                      <div class="sticker rotate-40"></div>
+                    </div>
+                  </a>
+                </div>
+                <!--2-->
+                <div
+                  class="position-relative my-5 my-md-0 d-flex justify-content-center"
+                >
+                  <a
+                    href="./works_2.html"
+                    class="btn p-0 hoverImage position-relative w-75"
+                  >
+                    <div>
+                      <img
+                        src="./img/index/work2.png"
+                        alt="2"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <!------------------sticker-left-->
+                    <div class="topLeft">
+                      <div class="sticker rotate-40"></div>
+                    </div>
+
+                    <!------------------sticker-right-->
+                    <div class="bottomRight">
+                      <div class="sticker rotate-40"></div>
+                    </div>
+                  </a>
+                  <!--pic-doodle-->
+                  <div
+                    class="w-25 position-absolute top-0 start-100 translate-middle"
+                  >
+                    <img
+                      src="./img/index/bg-2.png"
+                      alt="doodle"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
               </div>
-              <!--35-->
-              <div class="col align-self-center">
-                <a href="./works_3.html" class="btn mb-5 p-0 hoverImage">
-                  <img src="./img/index/work3.png" alt="3" class="img-fluid"
-                /></a>
-                <!--
-                <a href="#" class="btn mb-5 p-0 hoverImage">
-                  <img src="./img/index/work4.png" alt="5" class="img-fluid"
-                /></a>-->
+              <!--3-->
+              <div
+                class="col-11 col-md-6 col-lg-5 align-self-center mb-5 mb-md-0"
+              >
+                <div class="position-relative d-flex justify-content-center">
+                  <!--pic-doodle-->
+                  <div
+                    class="position-absolute w-75 end-0"
+                    style="z-index: -1; top: -6%"
+                  >
+                    <img
+                      src="./img/index/bg-3.png"
+                      alt="doodle"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <a
+                    href="./works_3.html"
+                    class="btn p-0 hoverImage position-relative rotate5 w-75"
+                  >
+                    <div>
+                      <img
+                        src="./img/index/work3.png"
+                        alt="3"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <!------------------sticker-left-->
+                    <div class="topRight">
+                      <div class="sticker rotate40"></div>
+                    </div>
+
+                    <!------------------sticker-right-->
+                    <div class="bottomLeft">
+                      <div class="sticker rotate40"></div>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
             <!------------------------picture-->
@@ -141,7 +248,7 @@
               style="background-color: #633f30"
             >
               <!---contente -->
-              <div class="bg-white rounded">
+              <div class="bg-white rounded text-dark">
                 <div class="container-fluid py-0 bg2 rounded">
                   <div class="row">
                     <!--left page-->
@@ -173,10 +280,10 @@
                             <div class="col-md-7">
                               <h4>關於我 /ABOUT ME</h4>
                               <p>
-                                Hi I’m Chia-Yu ! I’ve spent the last 7 years
-                                working as a UX Designer. Luckily, I gained
-                                valuable experiences from each project I’ve
-                                worked before. And I harnessed the experience to
+                                Hi I’m Chia-Yu (嘉妤)! I’ve spent the last 7
+                                years working as a UX Designer. Luckily, I
+                                gained valuable experiences from each project
+                                I’ve worked. And I harnessed the experience to
                                 build my vision and direct it towards
                                 meaningful, and accessible solutions or
                                 products. Let’s see what else we can do
@@ -216,15 +323,15 @@
                                   <li>＃Prototyping</li>
                                   <li>＃UI Flow Design</li>
                                   <li>＃User research methods</li>
-                                  <li>＃Basic Front-End Development</li>
+                                  <li>＃Basic Front-End Dev.</li>
                                 </ul>
                               </div>
                             </div>
                             <!-------------------------download-->
                             <div class="col-md mb-5">
                               <a
-                                href="./download/resume.png"
-                                download="pic.png"
+                                href="./download/resume.pdf"
+                                download="resume.pdf"
                                 class="btn d-flex align-items-center justify-content-center btn-resume"
                               >
                                 <span class="material-icons">
